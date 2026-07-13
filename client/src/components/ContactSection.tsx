@@ -13,9 +13,9 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "(555) 123-4567",
-    sub: "Mon–Sat, 7am–6pm",
-    href: "tel:+15551234567",
+    value: "(781) 630-0351",
+    sub: "Mon–Sat, 7am–7pm",
+    href: "tel:+17816300351",
   },
   {
     icon: Mail,
@@ -26,16 +26,16 @@ const contactInfo = [
   },
   {
     icon: MapPin,
-    label: "Service Area",
-    value: "Northern NJ & Eastern PA",
-    sub: "Free estimates within 50 miles",
+    label: "Address",
+    value: "83 Pacific St, Rockland, MA 02370",
+    sub: "Serving Rockland & the South Shore",
     href: undefined,
   },
   {
     icon: Clock,
     label: "Hours",
-    value: "Mon–Sat: 7am–6pm",
-    sub: "Emergency repairs available",
+    value: "Mon–Sat: 7am–7pm",
+    sub: "Closed Sunday",
     href: undefined,
   },
 ];
@@ -238,9 +238,9 @@ export default function ContactSection() {
                       <option value="wood">Wood Fencing</option>
                       <option value="vinyl">Vinyl Fencing</option>
                       <option value="chain-link">Chain Link</option>
-                      <option value="aluminum">Aluminum / Iron</option>
-                      <option value="farm">Farm & Ranch</option>
-                      <option value="repair">Fence Repair</option>
+                      <option value="iron">Iron & Ornamental</option>
+                      <option value="pool">Pool Fencing</option>
+                      <option value="custom">Custom Design & Build</option>
                       <option value="other">Other</option>
                     </select>
                   </div>

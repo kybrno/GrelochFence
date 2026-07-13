@@ -7,25 +7,25 @@
  * - Service cards with bold image headers and hover amber glow
  */
 import { useState, useEffect, useRef } from "react";
-import { ArrowRight, TreePine, Layers, Link2, Shield, Fence, Wrench } from "lucide-react";
+import { ArrowRight, TreePine, Layers, Link2, Shield, Waves, Ruler } from "lucide-react";
 
 const services = [
   {
     id: "01",
     title: "Wood Fencing",
-    description: "Cedar, pine, and pressure-treated wood fences custom-built for privacy, beauty, and durability. Stained or natural finish available.",
+    description: "Cedar, pine, and pressure-treated wood fences installed for privacy, beauty, and durability.",
     image: "/images/wood-fence.webp",
     icon: TreePine,
-    features: ["Privacy Panels", "Picket Styles", "Custom Heights", "Staining & Sealing"],
+    features: ["Wood Fence Installation"],
     tag: "Most Popular",
   },
   {
     id: "02",
     title: "Vinyl Fencing",
-    description: "Low-maintenance PVC vinyl fencing that resists rot, rust, and fading. Looks great for decades with minimal upkeep.",
+    description: "Low-maintenance PVC vinyl fencing that resists rot, rust, and fading, installed for privacy or curb appeal.",
     image: "/images/vinyl-fence.webp",
     icon: Layers,
-    features: ["Privacy & Picket", "Ranch Rail", "Semi-Privacy", "Custom Colors"],
+    features: ["Vinyl Fence Installation", "Privacy Fence Installation"],
     tag: null,
   },
   {
@@ -34,35 +34,35 @@ const services = [
     description: "Cost-effective, durable chain link fencing for residential yards, commercial lots, and industrial perimeters.",
     image: "https://images.unsplash.com/photo-1606075920539-565e9f1de54c?w=800&q=80",
     icon: Link2,
-    features: ["Galvanized & Vinyl-Coated", "Security Heights", "Gates & Access", "Commercial Grade"],
+    features: ["Chain Link Fence Installation"],
     tag: null,
   },
   {
     id: "04",
-    title: "Aluminum & Iron",
-    description: "Elegant ornamental aluminum and wrought iron fencing that adds curb appeal and lasting security to any property.",
+    title: "Iron & Ornamental",
+    description: "Elegant ornamental iron fencing, custom-fabricated and installed to add curb appeal and lasting security.",
     image: "/images/aluminum-iron-fence.webp",
     icon: Shield,
-    features: ["Decorative Styles", "Powder Coating", "Custom Heights", "Pool-Safe Options"],
+    features: ["Iron Fence Installation", "Ornamental Iron Design & Installation", "Custom Fabrication"],
     tag: null,
   },
   {
     id: "05",
-    title: "Farm & Ranch",
-    description: "Heavy-duty agricultural fencing including split rail, board fence, and high-tensile wire for livestock and land management.",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
-    icon: Fence,
-    features: ["Split Rail", "Board Fence", "High-Tensile Wire", "Electric Options"],
+    title: "Pool Fencing",
+    description: "Code-compliant pool fencing that keeps your backyard safe without sacrificing style.",
+    image: "/images/vinyl-pool-fence.webp",
+    icon: Waves,
+    features: ["Pool Fence Installation"],
     tag: null,
   },
   {
     id: "06",
-    title: "Fence Repair",
-    description: "Fast, reliable repair service for damaged, leaning, or aging fences. We restore your fence to like-new condition.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
-    icon: Wrench,
-    features: ["Post Replacement", "Panel Repair", "Gate Adjustment", "Storm Damage"],
-    tag: "Fast Turnaround",
+    title: "Custom Design & Build",
+    description: "From concept to construction, we design and build custom fencing tailored to your property.",
+    image: "/images/vinyl-fence-oceanfront.webp",
+    icon: Ruler,
+    features: ["Fence Design", "Custom Fence Construction", "Fence Installation"],
+    tag: null,
   },
 ];
 

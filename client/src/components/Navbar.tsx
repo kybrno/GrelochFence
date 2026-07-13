@@ -75,11 +75,11 @@ export default function Navbar() {
         {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-4">
           <a
-            href="tel:+15551234567"
+            href="tel:+17816300351"
             className="hidden md:flex items-center gap-2 text-[oklch(0.72_0.15_65)] font-display font-bold text-sm tracking-wider uppercase hover:text-white transition-colors duration-200"
           >
             <Phone size={15} strokeWidth={2.5} />
-            (555) 123-4567
+            (781) 630-0351
           </a>
           <button
             onClick={() => handleNavClick("#contact")}
@@ -114,11 +114,11 @@ export default function Navbar() {
             </button>
           ))}
           <a
-            href="tel:+15551234567"
+            href="tel:+17816300351"
             className="flex items-center gap-2 text-[oklch(0.72_0.15_65)] font-display font-bold text-sm tracking-wider uppercase mt-3"
           >
             <Phone size={15} />
-            (555) 123-4567
+            (781) 630-0351
           </a>
           <button
             onClick={() => handleNavClick("#contact")}

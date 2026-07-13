@@ -47,9 +47,9 @@ const galleryItems = [
   },
   {
     id: 6,
-    src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
-    title: "Split Rail Ranch Fence",
-    location: "Agricultural — Valley Ranch",
+    src: "/images/vinyl-fence.webp",
+    title: "White Vinyl Fence",
+    location: "Residential Installation",
     span: "",
   },
 ];

@@ -12,63 +12,84 @@ import { Star, Quote } from "lucide-react";
 const reviews = [
   {
     id: 1,
-    name: "Michael Harrington",
-    location: "Maplewood, NJ",
+    name: "John Brooker",
+    location: null,
     rating: 5,
-    date: "March 2024",
-    text: "Greloch installed a 200-foot cedar privacy fence around our backyard. The crew was professional, showed up on time every day, and the finished product is absolutely beautiful. Couldn't be happier.",
-    project: "Cedar Privacy Fence",
-    avatar: "MH",
+    text: "Recently had a few sections of fence come down in a storm. I was referred by a friend who had nothing but great things to say about Greloch Fence. I called and left a message and he got back to me the next day. Came down and gave me a great quote and my fences were fixed shortly after. Jack did a great job.",
+    project: "Storm Damage Repair",
+    avatar: "JB",
   },
   {
     id: 2,
-    name: "Sandra & Tom Kowalski",
-    location: "Lakeside, PA",
+    name: "Julian",
+    location: null,
     rating: 5,
-    date: "January 2024",
-    text: "We got three quotes and Greloch was most competitive while also having the best reviews. The aluminum ornamental fence they installed looks like it belongs on a magazine cover. Incredible work.",
-    project: "Ornamental Aluminum",
-    avatar: "SK",
+    text: "Tom was great! He was responsive, showed up when he said he would and did a great job providing and installing the new white vinyl fence + gate. The fence looks great and is nice quality. Planning a larger fence job already for the future. Highly recommend.",
+    project: "Vinyl Fence & Gate",
+    avatar: "J",
   },
   {
     id: 3,
-    name: "David Chen",
-    location: "Sunridge, NJ",
+    name: "Kyle K",
+    location: "Rockland, MA",
     rating: 5,
-    date: "November 2023",
-    text: "Had them replace an old rotted wood fence with vinyl. The team was fast, clean, and respectful of our property. The new fence looks amazing and I'll never worry about it rotting again.",
-    project: "Vinyl Privacy Fence",
-    avatar: "DC",
+    text: "Tom worked faster and more efficiently than I have ever seen anyone in the field. He installed white vinyl and black chain link fence at my home in Rockland and it looks and functions beautifully. Tom did a great job and I would highly recommend his services, as he was one of the best prices around. Great guy, great work. Can't go wrong with him.",
+    project: "Vinyl & Chain Link Fence",
+    avatar: "KK",
   },
   {
     id: 4,
-    name: "Patricia Okafor",
-    location: "Heritage Hills, PA",
+    name: "Elizabeth G",
+    location: null,
     rating: 5,
-    date: "September 2023",
-    text: "From the initial quote to the final walkthrough, Greloch was communicative and professional every step of the way. The wrought iron gate they installed is a showpiece. Neighbors keep asking who did it.",
-    project: "Wrought Iron Gate",
-    avatar: "PO",
+    text: "Tom did an amazing job with my fence. I obtained five quotes for a vinyl fence and he provided me with the fairest quote. His competitors told me I would have to wait four to six weeks for installation. He installed the fence within two weeks. He was polite and professional; I am pleased with my fence.",
+    project: "Vinyl Fence",
+    avatar: "EG",
   },
   {
     id: 5,
-    name: "James Whitfield",
-    location: "Valley Ranch, NJ",
+    name: "Stephen J.",
+    location: null,
     rating: 5,
-    date: "August 2023",
-    text: "We needed 1,500 feet of agricultural fencing. Greloch handled the whole project efficiently and the pricing was fair. The crew worked hard and the fence is solid. Highly recommend for large jobs.",
-    project: "Agricultural Fencing",
-    avatar: "JW",
+    text: "Excellent workmanship! My wife and I are extremely happy with the cedar fence that Tom recently installed for us. He was a pleasure to work with and was both professional and responsive throughout the entire process. Very reasonably priced and quick turnaround as well. I would certainly hire him again and fully recommend his services to anyone looking for a quality product at a fair price - thank you Tom!",
+    project: "Cedar Fence",
+    avatar: "SJ",
   },
   {
     id: 6,
-    name: "Renee Fontaine",
-    location: "Brookfield, NJ",
+    name: "J Brandon W.",
+    location: "Somerville, MA",
     rating: 5,
-    date: "June 2023",
-    text: "After a storm knocked down part of our fence, Greloch came out quickly and had the repair done within a week. Reasonable price, great work. They've earned a customer for life.",
-    project: "Storm Damage Repair",
-    avatar: "RF",
+    text: "Replaced a wood fence along rear of our backyard summer of 2022. Was very happy with his overall professionalism, work quality, amazing speed, and very competitive pricing! Checked out his references from many former clients, as well as several local jobs & fully impressed.",
+    project: "Wood Fence Replacement",
+    avatar: "JW",
+  },
+  {
+    id: 7,
+    name: "Emily P.",
+    location: null,
+    rating: 5,
+    text: "Tom is wonderful!! Highly recommend Greloch Fence, they were fast, hard working, pricing was the best around and so friendly! Highly recommend if you are in the market for a new fence!",
+    project: null,
+    avatar: "EP",
+  },
+  {
+    id: 8,
+    name: "Lamont Collins",
+    location: null,
+    rating: 5,
+    text: "Great price. The fence was very satisfying.",
+    project: null,
+    avatar: "LC",
+  },
+  {
+    id: 9,
+    name: "Tim Durfee",
+    location: null,
+    rating: 5,
+    text: "Positive: Responsiveness, Punctuality, Quality, Professionalism, Value.",
+    project: null,
+    avatar: "TD",
   },
 ];
 
@@ -151,7 +172,7 @@ export default function ReviewsSection() {
                     <Star key={i} size={16} className="text-[oklch(0.72_0.15_65)] fill-[oklch(0.72_0.15_65)]" />
                   ))}
                 </div>
-                <div className="text-xs text-[oklch(0.55_0.01_60)] uppercase tracking-wider">200+ verified reviews</div>
+                <div className="text-xs text-[oklch(0.55_0.01_60)] uppercase tracking-wider">{reviews.length} verified reviews</div>
               </div>
             </div>
           </div>
@@ -181,9 +202,11 @@ export default function ReviewsSection() {
               </p>
 
               {/* Project tag */}
-              <div className="mt-4 inline-block bg-[oklch(0.72_0.15_65)]/8 border border-[oklch(0.72_0.15_65)]/20 px-2 py-0.5 text-[oklch(0.72_0.15_65)] font-display font-semibold text-[10px] uppercase tracking-wide">
-                {review.project}
-              </div>
+              {review.project && (
+                <div className="mt-4 inline-block bg-[oklch(0.72_0.15_65)]/8 border border-[oklch(0.72_0.15_65)]/20 px-2 py-0.5 text-[oklch(0.72_0.15_65)] font-display font-semibold text-[10px] uppercase tracking-wide">
+                  {review.project}
+                </div>
+              )}
 
               {/* Reviewer */}
               <div className="mt-5 flex items-center gap-3 pt-4 border-t border-[oklch(0.28_0.01_60)]">
@@ -194,9 +217,9 @@ export default function ReviewsSection() {
                   <div className="font-display font-bold text-sm uppercase tracking-wide text-white">
                     {review.name}
                   </div>
-                  <div className="text-xs text-[oklch(0.50_0.01_60)]">
-                    {review.location} · {review.date}
-                  </div>
+                  {review.location && (
+                    <div className="text-xs text-[oklch(0.50_0.01_60)]">{review.location}</div>
+                  )}
                 </div>
               </div>
             </div>
@@ -209,7 +232,7 @@ export default function ReviewsSection() {
           style={{ opacity: visible ? 1 : 0, transition: "opacity 0.5s ease 0.6s" }}
         >
           <p className="text-[oklch(0.50_0.01_60)] text-sm mb-5">
-            Join hundreds of satisfied homeowners and businesses across the region.
+            Join our growing list of satisfied homeowners across Rockland and the South Shore.
           </p>
           <button
             onClick={() => {

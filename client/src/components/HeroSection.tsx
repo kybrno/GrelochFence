@@ -83,7 +83,6 @@ export default function HeroSection() {
               { value: "20+", label: "Years Experience" },
               { value: "2,400+", label: "Projects Completed" },
               { value: "100%", label: "Licensed & Insured" },
-              { value: "5★", label: "Average Rating" },
             ].map((stat) => (
               <div key={stat.label} className="amber-bar">
                 <div className="font-display font-black text-3xl text-[oklch(0.72_0.15_65)] leading-none">

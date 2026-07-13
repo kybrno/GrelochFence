@@ -7,12 +7,17 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 
 const serviceLinks = [
-  "Wood Fencing",
-  "Vinyl Fencing",
-  "Chain Link",
-  "Aluminum & Iron",
-  "Farm & Ranch",
-  "Fence Repair",
+  "Chain Link Fence Installation",
+  "Custom Fabrication",
+  "Custom Fence Construction",
+  "Fence Design",
+  "Fence Installation",
+  "Iron Fence Installation",
+  "Ornamental Iron Fence Design & Installation",
+  "Pool Fence Installation",
+  "Privacy Fence Installation",
+  "Vinyl Fence Installation",
+  "Wood Fence Installation",
 ];
 
 const quickLinks = [
@@ -112,13 +117,13 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+15551234567" className="flex items-start gap-3 group">
+                <a href="tel:+17816300351" className="flex items-start gap-3 group">
                   <Phone size={14} className="text-[oklch(0.72_0.15_65)] mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="text-sm text-[oklch(0.80_0.01_60)] group-hover:text-[oklch(0.72_0.15_65)] transition-colors">
-                      (555) 123-4567
+                      (781) 630-0351
                     </div>
-                    <div className="text-xs text-[oklch(0.45_0.01_60)]">Mon–Sat, 7am–6pm</div>
+                    <div className="text-xs text-[oklch(0.45_0.01_60)]">Mon–Sat, 7am–7pm · Closed Sunday</div>
                   </div>
                 </a>
               </li>
@@ -134,8 +139,8 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin size={14} className="text-[oklch(0.72_0.15_65)] mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-sm text-[oklch(0.80_0.01_60)]">Northern NJ & Eastern PA</div>
-                    <div className="text-xs text-[oklch(0.45_0.01_60)]">Free estimates within 50 miles</div>
+                    <div className="text-sm text-[oklch(0.80_0.01_60)]">83 Pacific St, Rockland, MA 02370</div>
+                    <div className="text-xs text-[oklch(0.45_0.01_60)]">Serving Rockland & the South Shore</div>
                   </div>
                 </div>
               </li>
