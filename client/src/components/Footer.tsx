@@ -43,12 +43,12 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/images/logo.png"
-                alt="Greloch Logo"
+                src="/photos/logo.png"
+                alt="J&K Greloch Fence Logo"
                 className="w-8 h-8 object-contain"
               />
               <span className="font-display font-extrabold text-xl tracking-widest uppercase text-white">
-                GRELOCH
+                J&K GRELOCH
               </span>
             </div>
             <p className="text-sm text-[oklch(0.55_0.01_60)] leading-relaxed mb-6">
@@ -139,7 +139,7 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin size={14} className="text-[oklch(0.72_0.15_65)] mt-0.5 flex-shrink-0" />
                   <div>
-                    <div className="text-sm text-[oklch(0.80_0.01_60)]">83 Pacific St, Rockland, MA 02370</div>
+                    <div className="text-sm text-[oklch(0.80_0.01_60)]">64 Oregon Ave, Rockland, MA 02370</div>
                     <div className="text-xs text-[oklch(0.45_0.01_60)]">Serving Rockland & the South Shore</div>
                   </div>
                 </div>
@@ -153,7 +153,7 @@ export default function Footer() {
       <div className="border-t border-[oklch(0.18_0.01_60)]">
         <div className="container mx-auto py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-[oklch(0.40_0.01_60)]">
-            © {new Date().getFullYear()} Greloch Fence Company. All rights reserved.
+            © {new Date().getFullYear()} J&K Greloch Fence. All rights reserved.
           </p>
           <div className="flex gap-5">
             {["Privacy Policy", "Terms of Service", "Sitemap"].map((item) => (

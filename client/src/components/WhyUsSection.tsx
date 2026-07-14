@@ -33,7 +33,7 @@ const reasons = [
   {
     icon: Users,
     title: "Local & Family-Owned",
-    description: "Greloch is a local business with roots in this community. We treat every property like it's our own.",
+    description: "J&K Greloch Fence is a local, family-owned business with roots in this community. We treat every property like it's our own.",
   },
   {
     icon: ThumbsUp,
@@ -109,7 +109,7 @@ export default function WhyUsSection() {
                 transition: "opacity 0.5s ease 0.15s, transform 0.5s ease 0.15s",
               }}
             >
-              For over 20 years, Greloch Fence has been the trusted choice for homeowners and contractors across the region. We combine old-school work ethic with modern installation techniques to deliver fences that last.
+              For over 20 years, J&K Greloch Fence has been the trusted choice for homeowners and contractors across the region. We combine old-school work ethic with modern installation techniques to deliver fences that last.
             </p>
 
             {/* Stats row */}

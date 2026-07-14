@@ -19,7 +19,7 @@ export default function HeroSection() {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/hero-waterfront-vinyl.webp')" }}
+        style={{ backgroundImage: "url('/photos/IMG_0125.jpeg')" }}
       />
 
       {/* Dark gradient overlay */}
@@ -52,7 +52,7 @@ export default function HeroSection() {
 
           {/* Subtext */}
           <p className="mt-6 text-lg text-white/75 max-w-xl leading-relaxed animate-fade-up-delay-2 font-body">
-            Greloch Fence installs residential and commercial fencing with precision craftsmanship and materials built to last. Wood, vinyl, chain link, aluminum — we do it right the first time.
+            J&K Greloch Fence installs residential and commercial fencing with precision craftsmanship and materials built to last. Wood, vinyl, chain link, aluminum — we do it right the first time.
           </p>
 
           {/* CTAs */}

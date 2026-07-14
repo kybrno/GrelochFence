@@ -27,7 +27,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Address",
-    value: "83 Pacific St, Rockland, MA 02370",
+    value: "64 Oregon Ave, Rockland, MA 02370",
     sub: "Serving Rockland & the South Shore",
     href: undefined,
   },

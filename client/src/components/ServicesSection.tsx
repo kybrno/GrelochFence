@@ -14,7 +14,7 @@ const services = [
     id: "01",
     title: "Wood Fencing",
     description: "Cedar, pine, and pressure-treated wood fences installed for privacy, beauty, and durability.",
-    image: "/images/wood-fence.webp",
+    image: "/photos/IMG_0131.jpeg",
     icon: TreePine,
     features: ["Wood Fence Installation"],
     tag: "Most Popular",
@@ -23,7 +23,7 @@ const services = [
     id: "02",
     title: "Vinyl Fencing",
     description: "Low-maintenance PVC vinyl fencing that resists rot, rust, and fading, installed for privacy or curb appeal.",
-    image: "/images/vinyl-fence.webp",
+    image: "https://images.unsplash.com/photo-1710706665973-cea15dded285?w=800&q=80",
     icon: Layers,
     features: ["Vinyl Fence Installation", "Privacy Fence Installation"],
     tag: null,
@@ -41,7 +41,7 @@ const services = [
     id: "04",
     title: "Iron & Ornamental",
     description: "Elegant ornamental iron fencing, custom-fabricated and installed to add curb appeal and lasting security.",
-    image: "/images/aluminum-iron-fence.webp",
+    image: "/photos/IMG_0343.jpeg",
     icon: Shield,
     features: ["Iron Fence Installation", "Ornamental Iron Design & Installation", "Custom Fabrication"],
     tag: null,
@@ -50,7 +50,7 @@ const services = [
     id: "05",
     title: "Pool Fencing",
     description: "Code-compliant pool fencing that keeps your backyard safe without sacrificing style.",
-    image: "/images/vinyl-pool-fence.webp",
+    image: "/photos/IMG_0344.jpeg",
     icon: Waves,
     features: ["Pool Fence Installation"],
     tag: null,
@@ -59,7 +59,7 @@ const services = [
     id: "06",
     title: "Custom Design & Build",
     description: "From concept to construction, we design and build custom fencing tailored to your property.",
-    image: "/images/vinyl-fence-oceanfront.webp",
+    image: "https://images.unsplash.com/photo-1646119955125-7ef8819c813a?w=800&q=80",
     icon: Ruler,
     features: ["Fence Design", "Custom Fence Construction", "Fence Installation"],
     tag: null,
@@ -204,7 +204,7 @@ export default function ServicesSection() {
           >
             <div className="w-12 h-0.5 bg-[oklch(0.72_0.15_65)] mb-4" />
             <p className="text-[oklch(0.60_0.01_60)] leading-relaxed text-sm">
-              From residential privacy fences to commercial security perimeters, Greloch delivers expert installation across all fence types and materials.
+              From residential privacy fences to commercial security perimeters, J&K Greloch Fence delivers expert installation across all fence types and materials.
             </p>
           </div>
         </div>

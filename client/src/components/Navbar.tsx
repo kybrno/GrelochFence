@@ -48,14 +48,14 @@ export default function Navbar() {
           onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
         >
           <img
-            src="/images/logo.png"
-            alt="Greloch Logo"
+            src="/photos/logo.png"
+            alt="J&K Greloch Fence Logo"
             className="w-9 h-9 object-contain"
           />
           <span
             className="font-display font-extrabold text-2xl tracking-widest uppercase text-white group-hover:text-[oklch(0.72_0.15_65)] transition-colors duration-200"
           >
-            GRELOCH
+            J&K GRELOCH
           </span>
         </a>
 
