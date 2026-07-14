@@ -7,7 +7,9 @@
  * - Staggered entrance animations
  */
 import { useState, useEffect, useRef } from "react";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ChevronDown, ChevronUp } from "lucide-react";
+
+const INITIAL_VISIBLE_COUNT = 6;
 
 const reviews = [
   {
@@ -109,7 +111,11 @@ function StarRating({ rating }: { rating: number }) {
 
 export default function ReviewsSection() {
   const [visible, setVisible] = useState(false);
+  const [expanded, setExpanded] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+
+  const hasMore = reviews.length > INITIAL_VISIBLE_COUNT;
+  const visibleReviews = expanded ? reviews : reviews.slice(0, INITIAL_VISIBLE_COUNT);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -180,7 +186,7 @@ export default function ReviewsSection() {
 
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {reviews.map((review, i) => (
+          {visibleReviews.map((review, i) => (
             <div
               key={review.id}
               className="group relative bg-[oklch(0.20_0.01_60)] border-l-2 border-[oklch(0.72_0.15_65)]/20 hover:border-[oklch(0.72_0.15_65)] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/40 hover:bg-[oklch(0.22_0.01_60)]"
@@ -225,6 +231,28 @@ export default function ReviewsSection() {
             </div>
           ))}
         </div>
+
+        {/* View more / show less */}
+        {hasMore && (
+          <div className="mt-10 text-center">
+            <button
+              onClick={() => setExpanded((v) => !v)}
+              className="inline-flex items-center gap-2 border border-[oklch(0.72_0.15_65)]/40 text-[oklch(0.72_0.15_65)] font-display font-bold text-xs tracking-widest uppercase px-6 py-3 transition-all duration-200 hover:border-[oklch(0.72_0.15_65)] hover:bg-[oklch(0.72_0.15_65)]/10"
+            >
+              {expanded ? (
+                <>
+                  Show Less
+                  <ChevronUp size={14} />
+                </>
+              ) : (
+                <>
+                  View More Reviews
+                  <ChevronDown size={14} />
+                </>
+              )}
+            </button>
+          </div>
+        )}
 
         {/* Bottom CTA */}
         <div
