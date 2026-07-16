@@ -20,9 +20,9 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "info@grelochfence.com",
+    value: "jacekgreloch781@gmail.com",
     sub: "We respond within 24 hours",
-    href: "mailto:info@grelochfence.com",
+    href: "mailto:jacekgreloch781@gmail.com",
   },
   {
     icon: MapPin,
@@ -40,9 +40,12 @@ const contactInfo = [
   },
 ];
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgngeoz";
+
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -62,13 +65,23 @@ export default function ContactSection() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setError(false);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Form submission failed");
       setSubmitted(true);
-    }, 1200);
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const inputClass =
@@ -273,6 +286,11 @@ export default function ContactSection() {
                     </>
                   )}
                 </button>
+                {error && (
+                  <p className="text-xs text-red-400 text-center">
+                    Something went wrong sending your request. Please try again, or call us directly at (781) 630-0351.
+                  </p>
+                )}
                 <p className="text-xs text-[oklch(0.40_0.01_60)] text-center">
                   No spam, no obligation. We'll contact you to schedule a free on-site estimate.
                 </p>

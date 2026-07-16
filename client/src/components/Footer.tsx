@@ -128,10 +128,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@grelochfence.com" className="flex items-start gap-3 group">
+                <a href="mailto:jacekgreloch781@gmail.com" className="flex items-start gap-3 group">
                   <Mail size={14} className="text-[oklch(0.72_0.15_65)] mt-0.5 flex-shrink-0" />
                   <div className="text-sm text-[oklch(0.80_0.01_60)] group-hover:text-[oklch(0.72_0.15_65)] transition-colors break-all">
-                    info@grelochfence.com
+                    jacekgreloch781@gmail.com
                   </div>
                 </a>
               </li>
