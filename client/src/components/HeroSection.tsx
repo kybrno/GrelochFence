@@ -81,7 +81,7 @@ export default function HeroSection() {
           <div className="mt-14 flex flex-wrap gap-8 animate-fade-up-delay-3">
             {[
               { value: "20+", label: "Years Experience" },
-              { value: "200+", label: "Projects Completed" },
+              { value: "400+", label: "Projects Completed" },
               { value: "100%", label: "Licensed & Insured" },
             ].map((stat) => (
               <div key={stat.label} className="amber-bar">

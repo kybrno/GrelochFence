@@ -140,7 +140,7 @@ export default function Footer() {
                   <MapPin size={14} className="text-[oklch(0.72_0.15_65)] mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="text-sm text-[oklch(0.80_0.01_60)]">64 Oregon Ave, Rockland, MA 02370</div>
-                    <div className="text-xs text-[oklch(0.45_0.01_60)]">Serving Rockland & the South Shore</div>
+                    <div className="text-xs text-[oklch(0.45_0.01_60)]">Serving New England</div>
                   </div>
                 </div>
               </li>

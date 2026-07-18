@@ -260,7 +260,7 @@ export default function ReviewsSection() {
           style={{ opacity: visible ? 1 : 0, transition: "opacity 0.5s ease 0.6s" }}
         >
           <p className="text-[oklch(0.50_0.01_60)] text-sm mb-5">
-            Join our growing list of satisfied homeowners across Rockland and the South Shore.
+            Join our growing list of satisfied homeowners across New England.
           </p>
           <button
             onClick={() => {
